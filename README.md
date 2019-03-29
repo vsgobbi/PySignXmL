@@ -32,10 +32,19 @@
 
 ## Installation
 
+### Clone
+
+### CLONE PROJECT
+- Firstly, clone this repo to your local machine
+
+```shell
+git clone https://github.com/vsgobbi/PySignXmL.git
+```
+---
 
 ### INSTALL REQUIRED LIBS
 
->Install main libs
+- Install main libs
 ```shell     
 pip install -r requirements.txt
 ``` 
@@ -46,29 +55,21 @@ pip install -r requirements.txt
 
 ---
 
-### Clone
 
-### CLONE PROJECT
-- Clone this repo to your local machine `
-
-```shell
-git clone https://github.com/vsgobbi/PySignXmL.git
-```
----
 
 ### Setup
 
 ### CREATE VENV
 
-> Create virtualenv using Python2.7
+- Create virtualenv using Python2.7
 ```shell     
 virtualenv -p python2.7 venv
 ```
-> Activate the virtualenv
+- Activate the virtualenv
 ```shell     
 source venv/bin/activate
 ```
-> Verify if version is correct
+- Verify if version is correct
 ```shell     
 python --version #expected return: Python2.7
 pip --version
