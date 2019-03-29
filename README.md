@@ -1,4 +1,4 @@
-##By @Vitor Sgobbi, 2019 
+## By @Vitor Sgobbi, 2019 
 > GPL licenced
 
 
@@ -8,7 +8,6 @@
 - [Installation](#installation)
 - [Features](#features)
 - [Contributing](#contributing)
-- [Team](#team)
 - [FAQ](#faq)
 - [Support](#support)
 - [License](#license)
