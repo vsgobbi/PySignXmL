@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<soap12:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://www.w3.org/2003/05/soap-envelope">
+  <soap12:Body>
+    <ConsultaCNPJRequest xmlns="http://www.prefeitura.sp.gov.br/nfe">
+      <VersaoSchema>1</VersaoSchema>
+      <MensagemXML>
+          <PedidoConsultaCNPJ>
+              <Cabecalho Versao="1">
+                <CPFCNPJRemetente>
+                  <CNPJ>CNPJ x</CNPJ>
+                </CPFCNPJRemetente>
+              </Cabecalho>
+            <CNPJContribuinte>
+            <CNPJ>CNPJ Y</CNPJ>
+            </CNPJContribuinte>
+            <Signature xmlns="http://www.w3.org/2000/09/xmldsig#">
+              <SignedInfo>
+                  <CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/>
+                    <SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/>
+                  <Reference>
+                      <Transforms>
+                      <Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/>
+                      <Transform Algorithm="http://www.w3c.org/TR/2001/REC-xml-c14n-20010315"/>
+                      </Transforms>
+                      <DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
+                      <DigestValue>HuMpzscXjIs2qKXGJw7yduTCts0=</DigestValue>
+                  </Reference>
+              </SignedInfo>
+              <SignatureValue>F0Te8gclpt0pW0BNBPCxknBFXs+igy/VvSM6zvy1agZGcv7ZiYWjzdMNB4G4ANeBPtpWI0hDae0/ZNHzXvUSHUJ+V+PANNCsKj1IAKNn4Sbv1DV4gPj15p4SUzpE4Lee5LvD37fPxx5VALRcWKLQoPL+ViOG+4S5YB5GFMx6A1vnpVcXpurr8HUZvhVkA3ilvNJMGf701q0oCJ/ttil0wo8xl2MaBoqywaTLD1PN5AjS/koFo7A+/ozOSCzIdojXWTIk2NLugYATZ9Trrrckx7TJb3QkBvj6TQg9H6r64Qy9bLxZWIhETrou/lCIAqXqsNvi8wsBYAwcF+R18CsqDw==</SignatureValue>
+            <KeyInfo>
+                <X509Data>
+                <X509Certificate>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</X509Certificate>
+                </X509Data>
+            </KeyInfo>
+            </Signature>
+          </PedidoConsultaCNPJ>
+      </MensagemXML>
+    </ConsultaCNPJRequest>
+  </soap12:Body>
+</soap12:Envelope>
