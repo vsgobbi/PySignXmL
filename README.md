@@ -72,7 +72,7 @@ pip --version
 ```
 
 ---
-## usage
+## Usage
 
 ### Using PySignXML to sign a xml
 
