@@ -1,9 +1,7 @@
 ## Description
 This lib was created in order to help users dealing with signed XML SOAP envelopes. PySignXML is intended to use with WebServices that requires certificate signatures values amongst the xml body.
 It's features are extracting .CERT or .PEM files and PrivateKeys to add values on Signatures elements as ***SignatureValue*** and ***X509Certificate*** with ***rsa-sha1*** type, compliance with http://www.w3.org/2000/09/xmldsig. 
-Sign a XML file or buffered String using A1 or A3 certificate. 
-Serializes the data to request SOAP services.   
-Create POST requests on WebServices as NFe or NFSe.
+Sign a XML file or buffered String using A1 or A3 certificate. Serializes the data to request SOAP services. Creates POST requests on WebServices as NFe or NFSe.
 
 ## Table of Contents
 
