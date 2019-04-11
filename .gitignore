@@ -3,6 +3,9 @@ venv/
 *.pyc
 *.idea
 .idea/
-
-
+*.pfx
+*.crt
+*.xml
+schemasv02/
+certfiles/
 
